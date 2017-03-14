@@ -11,6 +11,7 @@ ChickenManager::ChickenManager() {
 	soundCout = 0;
 }
 
+
 void ChickenManager::sound() {
 	cout << "Bawk...." << endl;
 	notifyListener();
@@ -27,6 +28,10 @@ void ChickenManager::onListenSound() {
 				<< soundCout <<endl;
 	}
 }
+
+
+
+
 
 ChickenManager::~ChickenManager() {
 	// TODO Auto-generated destructor stub

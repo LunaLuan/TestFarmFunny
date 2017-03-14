@@ -28,6 +28,13 @@ void CatManager::onListenSound() {
 	}
 }
 
+void CatManager::addOnSoundListener(OnSoundListener *onSoundListener) {
+	listeners.push_back(onSoundListener);
+}
+
+void CatManager::removeOnSoundListener(OnSoundListener *onSoundListener) {
+
+}
 
 CatManager::~CatManager() {
 	// TODO Auto-generated destructor stub

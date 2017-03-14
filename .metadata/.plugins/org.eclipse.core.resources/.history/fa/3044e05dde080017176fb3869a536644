@@ -1,12 +1,12 @@
 /*
- * CatManager.h
+ * ChickenManager.h
  *
  *  Created on: Mar 14, 2017
  *      Author: asd
  */
 
-#ifndef CATMANAGER_H_
-#define CATMANAGER_H_
+#ifndef CHICKENMANAGER_H_
+#define CHICKENMANAGER_H_
 
 #include "OnSoundListener.h"
 #include "SoundSubject.h"
@@ -14,21 +14,23 @@
 #include <vector>
 using namespace std;
 
-
-class CatManager: public OnSoundListener,
+class ChickenManager: public OnSoundListener,
 	public SoundSubject {
 public:
-	CatManager();
+	ChickenManager();
 
 	virtual void sound();
+	void addOnSoundListener(OnSoundListener *onSoundListener);
+	void removeOnSoundListener(OnSoundListener *onSoundListener);
 
 	virtual void onListenSound();
 
-	virtual ~CatManager();
+
+	virtual ~ChickenManager();
 
 private:
 	vector<class OnSoundListener*> listeners;
 	int soundCout;
 };
 
-#endif /* CATMANAGER_H_ */
+#endif /* CHICKENMANAGER_H_ */

@@ -1,0 +1,22 @@
+/*
+ * SoundSubject.cpp
+ *
+ *  Created on: Mar 15, 2017
+ *      Author: asd
+ */
+
+#include "SoundSubject.h"
+
+SoundSubject::SoundSubject() {
+	// TODO Auto-generated constructor stub
+
+}
+
+void notifyListener() {
+
+}
+
+SoundSubject::~SoundSubject() {
+	// TODO Auto-generated destructor stub
+}
+

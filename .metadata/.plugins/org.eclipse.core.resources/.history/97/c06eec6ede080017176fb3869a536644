@@ -1,0 +1,24 @@
+/*
+ * SoundSubject.h
+ *
+ *  Created on: Mar 15, 2017
+ *      Author: asd
+ */
+
+#ifndef SOUNDSUBJECT_H_
+#define SOUNDSUBJECT_H_
+
+class SoundSubject {
+public:
+	SoundSubject();
+
+	virtual void sound() = 0;
+	virtual void addOnSoundListener(OnSoundListener *onSoundListener);
+		virtual void removeOnSoundListener(OnSoundListener *onSoundListener);
+
+
+
+	virtual ~SoundSubject();
+};
+
+#endif /* SOUNDSUBJECT_H_ */

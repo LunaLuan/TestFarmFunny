@@ -20,9 +20,13 @@ class CatManager: public OnSoundListener,
 public:
 	CatManager();
 
-	virtual void sound();
+	void sound();
+
 
 	virtual void onListenSound();
+	void addOnSoundListener(OnSoundListener *onSoundListener);
+	void removeOnSoundListener(OnSoundListener *onSoundListener);
+
 
 	virtual ~CatManager();
 

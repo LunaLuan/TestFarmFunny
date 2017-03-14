@@ -9,24 +9,24 @@
 #define CHICKENMANAGER_H_
 
 #include "OnSoundListener.h"
-#include "SoundSubject.h"
 #include <iostream>
 #include <vector>
 using namespace std;
 
-class ChickenManager: public OnSoundListener,
-	public SoundSubject {
+class ChickenManager: public OnSoundListener {
 public:
 	ChickenManager();
 
-	virtual void sound();
+	void sound();
 
 	virtual void onListenSound();
-
+	void addOnSoundListener(OnSoundListener *onSoundListener);
+	void removeOnSoundListener(OnSoundListener *onSoundListener);
 
 	virtual ~ChickenManager();
 
 private:
+	vector<class OnSoundListener*> listeners;
 	int soundCout;
 };
 

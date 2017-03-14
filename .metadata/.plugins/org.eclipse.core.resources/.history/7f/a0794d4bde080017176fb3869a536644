@@ -15,18 +15,20 @@
 using namespace std;
 
 class ChickenManager: public OnSoundListener,
-	public SoundSubject {
+	public{
 public:
 	ChickenManager();
 
 	virtual void sound();
 
 	virtual void onListenSound();
-
+	void addOnSoundListener(OnSoundListener *onSoundListener);
+	void removeOnSoundListener(OnSoundListener *onSoundListener);
 
 	virtual ~ChickenManager();
 
 private:
+	vector<class OnSoundListener*> listeners;
 	int soundCout;
 };
 

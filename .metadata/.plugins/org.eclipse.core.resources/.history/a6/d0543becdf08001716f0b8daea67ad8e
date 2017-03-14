@@ -20,6 +20,8 @@ public:
 	ChickenManager();
 
 	virtual void sound();
+	virtual void addOnSoundListener(OnSoundListener *onSoundListener);
+	virtual void removeOnSoundListener(OnSoundListener *onSoundListener);
 
 	virtual void onListenSound();
 

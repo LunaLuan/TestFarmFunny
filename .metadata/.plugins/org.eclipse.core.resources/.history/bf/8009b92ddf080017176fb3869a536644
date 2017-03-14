@@ -11,9 +11,13 @@ ChickenManager::ChickenManager() {
 	soundCout = 0;
 }
 
+
 void ChickenManager::sound() {
 	cout << "Bawk...." << endl;
-	notifyListener();
+	int size = listeners.size();
+	for(int i = 0 ; i < size ; i++) {
+		listeners[i]->onListenSound();
+	}
 }
 
 void ChickenManager::onListenSound() {
@@ -26,7 +30,19 @@ void ChickenManager::onListenSound() {
 		cout << "...Thang meo kia. May sua it thoi + "
 				<< soundCout <<endl;
 	}
+
+
 }
+
+void ChickenManager::addOnSoundListener(OnSoundListener *onSoundListener) {
+	listeners.push_back(onSoundListener);
+}
+
+void ChickenManager::removeOnSoundListener(OnSoundListener *OnSoundListener) {
+
+}
+
+
 
 ChickenManager::~ChickenManager() {
 	// TODO Auto-generated destructor stub
