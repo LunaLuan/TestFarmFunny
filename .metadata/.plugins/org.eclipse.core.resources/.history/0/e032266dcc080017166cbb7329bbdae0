@@ -1,0 +1,17 @@
+/*
+ * ChickenManager.h
+ *
+ *  Created on: Mar 14, 2017
+ *      Author: asd
+ */
+
+#ifndef CHICKENMANAGER_H_
+#define CHICKENMANAGER_H_
+
+class ChickenManager {
+public:
+	ChickenManager();
+	virtual ~ChickenManager();
+};
+
+#endif /* CHICKENMANAGER_H_ */

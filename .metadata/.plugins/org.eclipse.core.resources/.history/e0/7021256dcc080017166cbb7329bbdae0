@@ -1,0 +1,18 @@
+/*
+ * ChickenManager.cpp
+ *
+ *  Created on: Mar 14, 2017
+ *      Author: asd
+ */
+
+#include "ChickenManager.h"
+
+ChickenManager::ChickenManager() {
+	// TODO Auto-generated constructor stub
+
+}
+
+ChickenManager::~ChickenManager() {
+	// TODO Auto-generated destructor stub
+}
+

@@ -1,0 +1,15 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Mar 14, 2017
+ *      Author: asd
+ */
+
+#include "ChickenManager.h"
+
+int main() {
+	cout << "Hello";
+	return 0;
+}
+
+

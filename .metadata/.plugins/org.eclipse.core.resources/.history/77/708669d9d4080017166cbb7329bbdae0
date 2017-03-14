@@ -1,0 +1,18 @@
+/*
+ * CatManager.cpp
+ *
+ *  Created on: Mar 14, 2017
+ *      Author: asd
+ */
+
+#include "CatManager.h"
+
+CatManager::CatManager() {
+	// TODO Auto-generated constructor stub
+
+}
+
+CatManager::~CatManager() {
+	// TODO Auto-generated destructor stub
+}
+

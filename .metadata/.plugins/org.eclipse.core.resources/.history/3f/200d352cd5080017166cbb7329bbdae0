@@ -1,0 +1,23 @@
+/*
+ * CatManager.cpp
+ *
+ *  Created on: Mar 14, 2017
+ *      Author: asd
+ */
+
+#include "CatManager.h"
+
+CatManager::CatManager() {
+	soundCout = 0;
+}
+
+void CatManager::sound() {
+	cout<<
+}
+
+
+
+CatManager::~CatManager() {
+	// TODO Auto-generated destructor stub
+}
+

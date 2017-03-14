@@ -1,0 +1,38 @@
+/*
+ * ChickenManager.cpp
+ *
+ *  Created on: Mar 14, 2017
+ *      Author: asd
+ */
+
+#include "ChickenManager.h"
+
+ChickenManager::ChickenManager() {
+	soundCout = 0;
+}
+
+
+void ChickenManager::sound() {
+	cout << "Toi la ga. Toi keu Bawk....";
+	int size = listeners.size();
+	for(int i = 0 ; i < size ; i++) {
+		listeners[i]->onListenSound();
+	}
+}
+
+
+
+void ChickenManager::addOnSoundListener(OnSoundListener *onSoundListener) {
+	listeners.push_back(onSoundListener);
+}
+
+void ChickenManager::removeOnSoundListener(OnSoundListener *OnSoundListener) {
+
+}
+
+
+
+ChickenManager::~ChickenManager() {
+	// TODO Auto-generated destructor stub
+}
+

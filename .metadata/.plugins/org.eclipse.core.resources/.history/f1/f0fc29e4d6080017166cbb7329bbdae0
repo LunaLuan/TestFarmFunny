@@ -1,0 +1,29 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Mar 14, 2017
+ *      Author: asd
+ */
+
+#include "ChickenManager.h"
+#include "CatManager.h"
+
+void printMenu() {
+	cout << "===================================" << endl;
+	cout << "1. Ga keu...." << endl;
+	cout << "2. Meo keu..." << endl;
+	cout << "0. End...";
+	cout << "===================================" << endl;
+}
+
+int main() {
+	ChickenManager chicken;
+	CatManager cat;
+
+	printMenu();
+
+
+	return 0;
+}
+
+

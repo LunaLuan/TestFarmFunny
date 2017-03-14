@@ -1,0 +1,28 @@
+/*
+ * CatManager.cpp
+ *
+ *  Created on: Mar 14, 2017
+ *      Author: asd
+ */
+
+#include "CatManager.h"
+
+CatManager::CatManager() {
+	soundCout = 0;
+}
+
+void CatManager::sound() {
+	cout << "Meok" << endl;
+	for (int i = 0 ; i < listeners.size() ; i++) {
+		listeners[i]->onListenSound();
+	}
+}
+
+void CatManager::onListenSound() {
+	soundCout++;
+}
+
+CatManager::~CatManager() {
+	// TODO Auto-generated destructor stub
+}
+

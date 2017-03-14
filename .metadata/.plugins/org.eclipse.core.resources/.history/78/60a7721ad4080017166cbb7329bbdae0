@@ -1,0 +1,29 @@
+/*
+ * CatManager.h
+ *
+ *  Created on: Mar 14, 2017
+ *      Author: asd
+ */
+
+#ifndef CATMANAGER_H_
+#define CATMANAGER_H_
+
+#include "OnSoundListener.h"
+
+class CatManager: public OnSoundListener {
+public:
+	CatManager();
+
+	void sound();
+
+
+	virtual void onListenSound();
+	void addOnSoundListener(OnSoundListener *onSoundListener);
+		void removeOnSoundListener(OnSoundListener *onSoundListener);
+
+
+
+	virtual ~CatManager();
+};
+
+#endif /* CATMANAGER_H_ */
