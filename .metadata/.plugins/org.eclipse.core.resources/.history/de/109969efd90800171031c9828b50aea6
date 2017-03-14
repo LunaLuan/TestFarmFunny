@@ -31,7 +31,7 @@ int main() {
 		if(type == 1) {
 			chicken.sound();
 		}
-		else if(type == 2) {
+		else {
 			cat.sound();
 		}
 		cin >> type;
